@@ -4,10 +4,27 @@
  */
 package core.editorial.libro;
 
+import core.editorial.Editorial;
+import core.editorial.persona.Autor;
+import core.editorial.persona.Narrador;
+import java.util.ArrayList;
+
 /**
  *
  * @author adria
  */
-public class Audiolibro {
+public class Audiolibro extends Libro{
+    
+    private int duracion;
+    private Narrador narrador;
+
+    public Audiolibro(int duracion, Narrador narrador, String titulo, String isbn, String genero, String formato, float precio, Editorial editorial) {
+        super(titulo, isbn, genero, formato, precio, editorial);
+        this.duracion = duracion;
+        this.narrador = narrador;
+    }
+
+    
+    
     
 }

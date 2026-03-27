@@ -4,10 +4,24 @@
  */
 package core.editorial.persona;
 
+import core.editorial.Editorial;
+
 /**
  *
  * @author adria
  */
-public class Gerente {
+public class Gerente extends Persona{
+    
+    private Editorial editorial;
+
+    public Gerente(String nombre, int cedula) {
+        super(nombre, cedula);
+    }
+    
+    public void setEditorial(Editorial editorial){
+        this.editorial = editorial;
+    }
+
+    
     
 }

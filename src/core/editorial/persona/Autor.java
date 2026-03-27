@@ -4,10 +4,21 @@
  */
 package core.editorial.persona;
 
+import core.editorial.libro.Libro;
+import java.util.ArrayList;
+
 /**
  *
  * @author adria
  */
-public class Autor {
+public class Autor extends Persona{
+    
+    private ArrayList<Libro> libros;
+
+    public Autor(ArrayList<Libro> libros, String nombre, int cedula) {
+        super(nombre, cedula);
+        this.libros = new ArrayList<>();
+    }
+    
     
 }

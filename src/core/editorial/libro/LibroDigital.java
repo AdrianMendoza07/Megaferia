@@ -4,10 +4,26 @@
  */
 package core.editorial.libro;
 
+import core.editorial.Editorial;
+import core.editorial.persona.Autor;
+import java.util.ArrayList;
+
 /**
  *
  * @author adria
  */
-public class LibroDigital {
+public class LibroDigital extends Libro{
+    private boolean hasHipervinculo;
+    private ArrayList<String> hiperVinculos;
+
+    public LibroDigital(boolean hasHipervinculo, ArrayList<String> hiperVinculos, String titulo, String isbn, String genero, String formato, float precio, Editorial editorial) {
+        super(titulo, isbn, genero, formato, precio, editorial);
+        this.hasHipervinculo = hasHipervinculo;
+        this.hiperVinculos = hiperVinculos;
+    }
+
+    
+
+    
     
 }
